@@ -1,0 +1,31 @@
+@import 'colors-base.sass'
+
+/* semantic color variables for this project */
+:root
+  --color-indigo: #{$indigo}
+  --color-magenta: #{$magenta}
+  --color-magenta-transparent: #{transparentize($magenta, 0.8)}
+
+  --color-background: #{$white}
+  --color-background-soft: #{$white-soft}
+  --color-background-mute: #{$white-mute}
+
+  --color-border: #{change-color($dark-border, $alpha: 0.12)}
+  --color-border-hover: #{change-color($dark-border, $alpha: 0.29)}
+
+  --color-heading: var(--color-indigo)
+  --color-text: var(--color-indigo)
+
+  --section-gap: 160px
+
+@media (prefers-color-scheme: dark)
+  :root
+    --color-background: #{$dark}
+    --color-background-soft: #{$dark-soft}
+    --color-background-mute: #{$dark-mute}
+
+    --color-border: #{change-color($light-border, $alpha: 0.65)}
+    --color-border-hover: #{change-color($light-border, $alpha: 0.48)}
+
+    --color-heading: #{$white}
+    --color-text: #{change-color($white-mute, $alpha: 0.6)}
