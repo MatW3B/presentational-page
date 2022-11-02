@@ -1,32 +1,27 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
-import type { PrismicDocument } from '@prismicio/types'
-import { from } from 'rxjs'
 import { Mousewheel, Pagination } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/vue'
-import WelcomeSectionVue from '@/components/WelcomeSection.vue'
+
+import WelcomeSection from '@/components/sections/WelcomeSection.vue'
+import BiographySection from '@/components/sections/BiographySection.vue'
+import ProjectsSection from '@/components/sections/ProjectsSection.vue'
+import ContactSection from '@/components/sections/ContactSection.vue'
 
 export default defineComponent({
   components: {
     Swiper,
     SwiperSlide,
-    WelcomeSectionVue
-  },
+    WelcomeSection,
+    BiographySection,
+    ProjectsSection,
+    ContactSection
+},
   setup(this) {
       return {
         modules: [Mousewheel, Pagination]
       }
   },
-  data() {
-    return {
-      document: null as null | PrismicDocument<any>
-    }
-  },
-  created() {
-    from(this.$prismic.client.getByUID('repo', 'lorem-ipsum')).subscribe({
-        next: (v) => this.document = v
-      })
-  }
 })
 </script>
 
@@ -42,19 +37,19 @@ export default defineComponent({
     class="mySwiper">
     <swiper-slide>
       <!-- section with Willkommen -->
-      <WelcomeSectionVue/>
+      <WelcomeSection/>
     </swiper-slide>
     <swiper-slide>
       <!-- section with brief introduction -->
-      {{ 'maj story, tech stack' }}
+      <BiographySection/>
     </swiper-slide>
     <swiper-slide> 
       <!-- section with github projects-->
-      {{ 'projekciki' }}
+      <ProjectsSection/>
     </swiper-slide>
     <swiper-slide>
       <!-- section with contact info-->
-      {{ 'email, discord' }}
+      <ContactSection/>
     </swiper-slide>
   </swiper>
 </template>
