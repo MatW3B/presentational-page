@@ -17,10 +17,10 @@
     "@prismicio/vue": "^3.1.1",
     "@quasar/extras": "^1.15.5",
     "quasar": "^2.10.0",
-    "rxjs": "^6.6.7",
+    "rxjs": "^7.5.7",
+    "swiper": "^8.4.4",
     "vue": "^3.2.41",
-    "vue-router": "^4.1.5",
-    "vue-rx": "^6.2.0"
+    "vue-router": "^4.1.5"
   },
   "devDependencies": {
     "@prismicio/types": "^0.2.3",
