@@ -5,7 +5,6 @@ function linkResolver(document: FilledContentRelationshipField) {
   if (document.type === "post") {
     return "/blog/" + document.uid;
   }
-
   return "/";
 }
 
