@@ -1,3 +1,8 @@
+// swiper imports
+@import "swiper/css"
+@import "swiper/css/pagination"
+@import "swiper/css/navigation"
+// internal imports
 @import './variables/colors-root.sass'
 
 *,
@@ -8,8 +13,11 @@
   position: relative
   font-weight: normal
 
+body, html
+  height: 100%
+  position: relative
+
 body
-  min-height: 100vh
   color: var(--color-text)
   background: var(--color-background)
   transition: color 0.5s, background-color 0.5s
@@ -20,8 +28,8 @@ body
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
 
-
 #app
+  height: 100%
   max-width: 1280px
   margin: 0 auto
   padding: 2rem
@@ -29,21 +37,16 @@ body
   font-weight: normal
 
 a,
-.green
+.magenta
   text-decoration: none
   color: var(--color-magenta)
   transition: 0.4s
 
-@media (hover: hover)
-  a:hover
-    background-color: var(--color-magenta-transparent)
+.swiper
+  width: 100%
+  height: 100%
 
-@media (min-width: 1024px)
-  body
-    display: flex
-    place-items: center
-
-  #app
-    display: grid
-    grid-template-columns: 1fr 1fr
-    padding: 0 2rem
+.swiper-slide
+  display: flex
+  align-items: center
+  justify-content: center
