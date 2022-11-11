@@ -7,6 +7,12 @@ export default defineComponent({
 
 <template>
     <section>
-        {{ 'email, discord' }}
+        
+        <p>Interested in catching me somewhere?</p>
+        <p>Feel free to reach me on:</p>
+        <!-- UOOOGH ROZWIJANE IKONKI TUTAJ SZTOSIWO BEDZIEEE -->
+        email
+        discord
+        IG
     </section>
 </template>
