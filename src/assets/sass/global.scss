@@ -1,0 +1,66 @@
+#app {
+  height: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 3rem;
+  font-weight: normal;
+}
+
+h1, h2, h3, h4, h5 {
+  color: var(--color-heading);
+  font-family: Rosina, 'Segoe UI';
+  line-height: normal;
+  margin-left: -0.07em;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+h2 {
+  font-weight: 600;
+}
+
+.flex {
+  display: flex;
+  &.column {
+    flex-direction: column;
+  }
+}
+
+a,
+.magenta {
+  text-decoration: none;
+  color: var(--color-magenta);
+  transition: 0.4s;
+}
+
+.green {
+  color: var(--color-green);
+}
+
+.gradient-text {
+  color: transparent;
+  font-weight: 1000;
+  background-image: linear-gradient(60deg, var(--color-magenta) 0%, var(--color-sand) 100%);
+  background-size: 400% 400%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+button {
+  width: fit-content;
+}

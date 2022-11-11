@@ -9,7 +9,7 @@ import '@quasar/extras/material-icons/material-icons.css'
 
 // Import Style files
 import 'quasar/src/css/index.sass'
-import './assets/sass/main.sass'
+import './assets/sass/main.scss'
 
 const app = createApp(App)
     .use(router)
