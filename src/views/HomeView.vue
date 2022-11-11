@@ -29,9 +29,10 @@ export default defineComponent({
   <swiper :direction="'vertical'"
     :slidesPerView="1"
     :spaceBetween="30"
+    :speed="800"
     :mousewheel="true" 
     :pagination="{
-      clickable: true,
+      clickable: false,
     }" 
     :modules="modules"
     class="mySwiper">
