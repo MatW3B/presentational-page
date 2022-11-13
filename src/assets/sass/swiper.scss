@@ -17,3 +17,43 @@
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: var(--color-magenta);
 }
+
+.swiper-btn {
+  cursor: pointer;
+  transition: all 0.2s ease;
+  transform: scale(90%);
+
+  svg {
+    transition: all 0.3s ease;
+  }
+
+  &:hover {
+    transition: all 0.2s ease;
+    transform: scale(100%);
+
+    svg {
+      animation: colorPulse 2.3s ease-in-out infinite;
+      transition: all 0.3s ease;
+    }
+  }
+
+}
+
+@keyframes colorPulse {
+  0% {
+    fill: var(--color-heading);
+  }
+  15% {
+    fill: var(--color-sand);
+  }
+  50% {
+    fill: var(--color-magenta);
+  }
+  85% {
+    fill: var(--color-sand);
+  }
+  100% {
+    fill: var(--color-heading);
+  }
+
+}

@@ -1,11 +1,16 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
+import ArrowStraightVue from '../iconWrappers/ArrowStraight.vue'
 
 export default defineComponent({
+    components: {
+      ArrowStraightVue,
+    }
 })
 </script>
 
 <template>
+    <ArrowStraightVue label="Welcome" pointing="up"/>
     <section>
         <p> <!--About Me -->
             Caught the passion for developing webApps at the university, going over subjects and competitions
@@ -28,4 +33,5 @@ export default defineComponent({
             <li>Python</li>
         </ul>
     </section>
+    <ArrowStraightVue label="Projects" pointing="down"/>
 </template>

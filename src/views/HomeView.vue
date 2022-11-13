@@ -1,6 +1,6 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
-import { Mousewheel, Pagination } from 'swiper'
+import { Mousewheel, Navigation } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 
 import WelcomeSection from '@/components/sections/WelcomeSection.vue'
@@ -19,7 +19,7 @@ export default defineComponent({
 },
   setup(this) {
       return {
-        modules: [Mousewheel, Pagination]
+        modules: [Mousewheel, Navigation]
       }
   },
 })
@@ -31,9 +31,11 @@ export default defineComponent({
     :spaceBetween="30"
     :speed="800"
     :mousewheel="true" 
-    :pagination="{
-      clickable: false,
-    }" 
+    :preventClicks="false"
+    :navigation="{
+      prevEl: '.swiper-btn.prev',
+      nextEl: '.swiper-btn.next'
+    }"
     :modules="modules"
     class="mySwiper">
     <swiper-slide>

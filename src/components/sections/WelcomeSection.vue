@@ -1,7 +1,12 @@
 <script lang="ts">
+import ArrowStraightVue from '../iconWrappers/ArrowStraight.vue'
+
 import { defineComponent } from 'vue'
 
 export default defineComponent({
+    components: {
+      ArrowStraightVue,
+    }
 })
 </script>
 
@@ -15,6 +20,7 @@ export default defineComponent({
     <p>Focusing on creating web apps and websites, design, UI/UX and web security.</p>
     <button id="btn-repository">Repository</button>
   </section>
+  <ArrowStraightVue label="About Me" pointing="down"/>
 </template>
 
 <style scoped lang="scss">
