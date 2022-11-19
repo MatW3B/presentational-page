@@ -12,13 +12,11 @@ export default defineComponent({
 
 <template>
   <section class="flex column">
-    <h1>
-      Hey. <br>
-      I am Mat. <br>
-      A <span class="gradient-text">Frontend</span> Dev.
-    </h1>
+    <h1> Hey.</h1>
+    <h1>I am Mat.</h1>
+    <h1 style="margin-left: 0.1rem;">A <span class="gradient-text">Frontend</span> Dev.</h1>  
     <p>Focusing on creating web apps and websites, design, UI/UX and web security.</p>
-    <button id="btn-repository">Repository</button>
+    <q-btn id="btn-repository" href="https://github.com/TheMishu" label="Repository" outline rounded />
   </section>
   <ArrowStraightVue label="About Me" pointing="down"/>
 </template>
@@ -27,15 +25,11 @@ export default defineComponent({
 p {
   margin-bottom: 0px;
 }
-
-h1, h2 {
-  margin-bottom: 1rem;
-}
   
 #btn-repository {
   margin-top: 1rem;
-  align-items: flex-end;
+  width: 120px;
+  align-self: flex-end;
 }
-
 
 </style>

@@ -1,3 +1,4 @@
+@import './animations.scss';
 .swiper {
   width: 100%;
   height: 100%;
@@ -5,6 +6,7 @@
 
 .swiper-slide {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -20,40 +22,21 @@
 
 .swiper-btn {
   cursor: pointer;
-  transition: all 0.2s ease;
+  @extend .short-transition;
   transform: scale(90%);
 
   svg {
-    transition: all 0.3s ease;
+    @extend .short-transition;
+    fill: var(--color-heading);
   }
 
   &:hover {
-    transition: all 0.2s ease;
+    @extend .short-transition;
     transform: scale(100%);
 
     svg {
-      animation: colorPulse 2.3s ease-in-out infinite;
-      transition: all 0.3s ease;
+      @extend .color-pulse-anim;
     }
-  }
-
-}
-
-@keyframes colorPulse {
-  0% {
-    fill: var(--color-heading);
-  }
-  15% {
-    fill: var(--color-sand);
-  }
-  50% {
-    fill: var(--color-magenta);
-  }
-  85% {
-    fill: var(--color-sand);
-  }
-  100% {
-    fill: var(--color-heading);
   }
 
 }

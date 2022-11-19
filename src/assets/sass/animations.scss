@@ -1,0 +1,42 @@
+@keyframes colorPulse {
+  0% {
+    fill: var(--color-heading);
+    color: var(--color-heading);
+  }
+  15% {
+    fill: var(--color-sand);
+    color: var(--color-sand);
+  }
+  50% {
+    fill: var(--color-magenta);
+    color: var(--color-magenta);
+  }
+  85% {
+    fill: var(--color-sand);
+    color: var(--color-sand);
+  }
+  100% {
+    fill: var(--color-heading);
+    color: var(--color-heading);
+  }
+}
+
+@keyframes gradient-bg {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.color-pulse-anim {
+  animation: colorPulse 2.3s ease-in-out infinite;
+}
+
+.short-transition {
+  transition: all 0.2s ease;
+}
