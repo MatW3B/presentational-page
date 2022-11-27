@@ -1,17 +1,24 @@
 <script lang="ts">
+import HistorySection from '@/components/sections/Bio/History/HistorySection.vue';
 import { defineComponent } from 'vue'
-import ArrowStraightVue from '../iconWrappers/ArrowStraight.vue'
+import ArrowStraightVue from '../../iconWrappers/ArrowStraight.vue'
 
 export default defineComponent({
     components: {
-      ArrowStraightVue,
-    }
+    ArrowStraightVue,
+    HistorySection
+}
 })
 </script>
 
 <template>
     <ArrowStraightVue label="Welcome" pointing="up"/>
     <section>
+        <h2>History</h2>
+        <HistorySection></HistorySection>
+    </section>
+    <section>
+        <h2>About Me</h2>
         <p> <!--About Me -->
             Caught the passion for developing webApps at the university, going over subjects and competitions
             made me pursue the craft more.
@@ -21,17 +28,9 @@ export default defineComponent({
             <!-- years could be calculated easily :) -->
         </p>
         <p> <!-- Current goals -->
-            Currently interested in and exploring web3, security and UX oriented design. 
+            Currently interested in and exploring web3, reading up on web applications security issues and concerns,
+            learning figma and UX oriented design. 
         </p>
-        <h5>Tech stack I'm fond of:</h5>
-        <ul>
-            <li>Typescript</li>
-            <li>Angular</li>
-            <li>RxJs</li>
-            <li>LESS/Sass</li>
-            <li>Vue3</li>
-            <li>Python</li>
-        </ul>
     </section>
     <ArrowStraightVue label="Projects" pointing="down"/>
 </template>

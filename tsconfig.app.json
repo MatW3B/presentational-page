@@ -7,7 +7,8 @@
     "baseUrl": ".",
     "types": [
       "rxjs",
-      "swiper"
+      "swiper",
+      "chart.js"
     ],
     "paths": {
       "@/*": ["./src/*"]

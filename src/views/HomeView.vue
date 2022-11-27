@@ -4,7 +4,7 @@ import { Mousewheel, Navigation } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 
 import WelcomeSection from '@/components/sections/WelcomeSection.vue'
-import BiographySection from '@/components/sections/BiographySection.vue'
+import BiographySection from '@/components/sections/Bio/BiographySection.vue'
 import ProjectsSection from '@/components/sections/ProjectsSection.vue'
 import ContactSection from '@/components/sections/ContactSection.vue'
 
@@ -42,7 +42,7 @@ export default defineComponent({
       <!-- section with Willkommen -->
       <WelcomeSection/>
     </swiper-slide>
-    <swiper-slide>
+    <swiper-slide id="bio-slide">
       <!-- section with brief introduction -->
       <BiographySection/>
     </swiper-slide>
@@ -56,3 +56,10 @@ export default defineComponent({
     </swiper-slide>
   </swiper>
 </template>
+
+<style lang="scss" scoped>
+  #bio-slide {
+    align-items: flex-start;
+    justify-content: space-evenly;
+  }
+</style>

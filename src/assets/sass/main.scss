@@ -4,6 +4,7 @@
 @import "swiper/css/navigation";
 @import "./swiper.scss";
 // custom styling imports
+@import './variables/general.sass';
 @import './variables/colors-root.sass';
 @import './global.scss';
 
@@ -33,6 +34,14 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+#app {
+  height: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: $app-padding;
+  font-weight: normal;
 }
 
 @font-face {
