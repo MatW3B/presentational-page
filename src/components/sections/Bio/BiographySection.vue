@@ -13,7 +13,7 @@ export default defineComponent({
 
 <template>
     <ArrowStraightVue label="Welcome" pointing="up"/>
-    <section>
+    <section id="history-section">
         <h2>History</h2>
         <HistorySection></HistorySection>
     </section>
@@ -34,3 +34,9 @@ export default defineComponent({
     </section>
     <ArrowStraightVue label="Projects" pointing="down"/>
 </template>
+
+<style lang="scss" scoped>
+#history-section {
+    width: 100%; //for chart to be responsive
+}
+</style>

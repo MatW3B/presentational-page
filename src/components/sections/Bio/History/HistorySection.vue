@@ -51,7 +51,8 @@ export default defineComponent({
                             max: 2023,
                         }
                     },
-                    maintainAspectRatio: false
+                    maintainAspectRatio: false,
+                    responsive: true
 
                 }
             }
@@ -71,7 +72,6 @@ export default defineComponent({
 
 #bio-history-container {
     position: relative;
-    width: calc(100vw - 2* #{$app-padding});
-    height: 200px; //min height won work
+    height: 200px; //min height wont work
 }
 </style>
