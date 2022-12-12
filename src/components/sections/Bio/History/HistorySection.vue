@@ -45,8 +45,8 @@ export default defineComponent({
             },
             {
                 label: 'Fujitsu Frontend Developer',
-                dateStart: DateTime.fromObject({year: 2019, month: 11, day: 13}), 
-                dateEnd: DateTime.fromObject({year: 2023, month: 1, day: 1}), 
+                dateStart: DateTime.fromObject({year: 2019, month: 11, day: 14}), 
+                dateEnd: DateTime.now(), 
                 borderColor: styles.getPropertyValue('--color-magenta'),
                 backgroundColor: styles.getPropertyValue('--color-magenta-transparent'),
             }
