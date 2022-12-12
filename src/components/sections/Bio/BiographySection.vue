@@ -14,7 +14,7 @@ export default defineComponent({
 <template>
     <ArrowStraightVue label="Welcome" pointing="up"/>
     <section id="history-section">
-        <h2>History</h2>
+        <h2>My History</h2>
         <HistorySection></HistorySection>
     </section>
     <section>
