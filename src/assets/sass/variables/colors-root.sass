@@ -2,13 +2,16 @@
 
 /* semantic color variables for this project */
 :root
-  --color-indigo: #{$indigo}
-  --color-magenta: #{$magenta}
-  --color-magenta-transparent: #{transparentize($magenta, 0.8)}
-  --color-green: #{$green-positive}
-  --color-green-transparent: #{transparentize($green, 0.8)}
-
-  --color-sand: #{$sand}
+  --color-accent-indigo: #{$indigo}
+  --color-accent-indigo-transparent: #{transparentize($indigo, 0.8)}
+  --color-accent-magenta: #{$magenta}
+  --color-accent-magenta-transparent: #{transparentize($magenta, 0.8)}
+  --color-accent-green: #{$green-positive}
+  --color-accent-green-transparent: #{transparentize($green, 0.8)}
+  --color-accent-sand: #{$sand}
+  --color-accent-sand-transparent: #{transparentize($sand, 0.8)}
+  --color-accent-sand: #{$sand}
+  --color-accent-sand-transparent: #{transparentize($sand, 0.8)}
 
   --color-background: #{$white}
   --color-background-soft: #{$white-soft}
@@ -17,8 +20,8 @@
   --color-border: #{change-color($dark-border, $alpha: 0.12)}
   --color-border-hover: #{change-color($dark-border, $alpha: 0.29)}
 
-  --color-heading: var(--color-indigo)
-  --color-text: var(--color-indigo)
+  --color-heading: var(--color-accent-indigo)
+  --color-text: var(--color-accent-indigo)
 
   --section-gap: 160px
 

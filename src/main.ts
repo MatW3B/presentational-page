@@ -17,5 +17,5 @@ const app = createApp(App)
         plugins: {},
     })
     .use(prismic)
-
+ 
 app.mount('#app')
